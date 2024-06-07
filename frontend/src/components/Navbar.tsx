@@ -3,9 +3,10 @@ import { useState } from "react";
 import clsx from "clsx";
 
 //icons
-import { AiOutlineMenu } from "react-icons/ai";
-import { AiOutlineClose } from "react-icons/ai";
+import { IoMdMenu } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 import { FcFlashOn } from "react-icons/fc";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 //images
 import logo from "../assets/images/raffle-logo.png";
@@ -22,17 +23,17 @@ const Navbar = () => {
   };
   return (
     <>
-      <div>
+      <div className="w-screen">
         <div className="sm:flex hidden justify-center bg-blackDark">
-          <p className="text-sm text-white py-1">
+          <p className="text-[12px] text-white font-poppins py-1">
             ✨Unlock the Excitement: Win Big with Our{" "}
             <span className="animated-text">Raffles & Giveaways!!</span>
           </p>
         </div>
-        <div className="flex flex-row justify-between items-center p-2 px-5 md:px-32 bg-white border-b-[1px] border-gray/40">
+        <div className="w-screen flex flex-row justify-between items-center p-1 px-5 lg:px-10 xl:px-20 bg-white border-b-[1px] border-gray/40">
           <div>
             <NavLink to="/" className="cursor-pointer">
-              <img src={logo} alt="Logo" className="w-44" />
+              <img src={logo} alt="Logo" className="w-44 -mt-1 pb-1" />
             </NavLink>
           </div>
           <nav className="hidden xl:flex gap-5 p-1 text-gray text-sm font-poppins">
@@ -42,7 +43,7 @@ const Navbar = () => {
                 clsx(
                   "hover:text-black transition-all cursor-pointer",
                   isActive
-                    ? "font-bold underline decoration-2 underline-offset-8 text-black"
+                    ? "font-semibold underline decoration-2 underline-offset-8 text-black"
                     : null
                 )
               }
@@ -55,7 +56,7 @@ const Navbar = () => {
                 clsx(
                   "hover:text-black transition-all cursor-pointer",
                   isActive
-                    ? "font-bold underline decoration-2 underline-offset-8 text-black"
+                    ? "font-semibold underline decoration-2 underline-offset-8 text-black"
                     : null
                 )
               }
@@ -68,7 +69,7 @@ const Navbar = () => {
                 clsx(
                   "hover:text-black transition-all cursor-pointer",
                   isActive
-                    ? "font-bold underline decoration-2 underline-offset-8 text-black"
+                    ? "font-semibold underline decoration-2 underline-offset-8 text-black"
                     : null
                 )
               }
@@ -81,7 +82,7 @@ const Navbar = () => {
                 clsx(
                   "hover:text-black transition-all cursor-pointer",
                   isActive
-                    ? "font-bold underline decoration-2 underline-offset-8 text-black"
+                    ? "font-semibold underline decoration-2 underline-offset-8 text-black"
                     : null
                 )
               }
@@ -94,7 +95,7 @@ const Navbar = () => {
                 clsx(
                   "hover:text-black transition-all cursor-pointer",
                   isActive
-                    ? "font-bold underline decoration-2 underline-offset-8 text-black"
+                    ? "font-semibold underline decoration-2 underline-offset-8 text-black"
                     : null
                 )
               }
@@ -102,21 +103,19 @@ const Navbar = () => {
               Games
             </NavLink>
           </nav>
-          <div className="flex gap-5">
+          <div className="xl:flex hidden gap-5">
             <div className="flex gap-2 items-center">
-              <img className="w-10" src={usaFlag} alt="USA Flag" />
+              <img className="w-9" src={usaFlag} alt="USA Flag" />
               <p className="uppercase text-[13px] font-medium font-poppins">
                 ENG
               </p>
             </div>
-            <button className="relative overflow-hidden bg-blackLight px-10 py-2 rounded-full transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-gradient-to-r from-purple via-red to-yellow before:transition-all before:duration-500 text-white hover:before:left-0 hover:before:w-full">
-              <span className="relative z-10 font-poppins text-sm font-medium">
-                Login
+            <button className="btn-transition btn-arrow flex justify-center items-center gap-2 w-28 px-10 py-2 rounded-full bg-blackLight text-white font-poppins text-sm font-medium">
+              Login
+              <span className="arrow-hidden hidden transition ease-in-out">
+                <FaArrowRightLong />
               </span>
             </button>
-            {/* <button className="px-10 py-2 rounded-full bg-blackLight text-white font-poppins text-sm font-medium">
-              Login
-            </button> */}
           </div>
           <div
             className="flex xl:hidden z-50 transition-all"
@@ -124,19 +123,21 @@ const Navbar = () => {
           >
             <div className="p-2">
               {isMenuOpen ? (
-                <AiOutlineMenu size={22} />
+                <IoMdMenu size={24} />
               ) : (
-                <AiOutlineClose size={22} />
+                <div className="sm:-mt-12 -mt-3 sm:-mr-2 -mr-3 border-[1px] border-gray/50 rounded-full p-1">
+                  <IoMdClose size={18} />
+                </div>
               )}
             </div>
           </div>
           <div
             className={` ${
               menu ? "translate-x-0" : "-translate-x-full"
-            } xl:hidden flex justify-end absolute bg-black/50 right-0 top-0 overflow-x-hidden w-full h-screen transition-transform duration-300 `}
+            } xl:hidden flex justify-end absolute bg-black/50 left-0 top-0 overflow-x-hidden w-full h-screen transition-transform duration-300`}
           >
             <div className="flex flex-col bg-white lg:w-2/5 md:w-3/6 w-2/4 font-poppins text-blackLight h-screen pt-4 pb-4 overflow-hidden">
-              <div className="flex gap-2 items-center pb-5 px-2">
+              <div className="flex gap-2 items-center pb-3 px-2">
                 <img src={upgrade} className="w-10" alt="Upgrade" />
                 <NavLink to="shop" className="underline">
                   Upgrade
@@ -159,52 +160,55 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   clsx(
                     "px-5 py-3 transition-all cursor-pointer",
-                    isActive
-                      ? "font-bold underline underline-offset-8 text-black"
-                      : null
+                    isActive ? "bg-[#f3f3f3]" : null
                   )
                 }
               >
-                About
+                Dashboard
               </NavLink>
               <NavLink
                 to="courses"
                 className={({ isActive }) =>
                   clsx(
                     "px-5 py-3 transition-all cursor-pointer",
-                    isActive
-                      ? "font-bold underline underline-offset-8 text-black"
-                      : null
+                    isActive ? "bg-[#f3f3f3]" : null
                   )
                 }
               >
-                Courses
+                Shop
               </NavLink>
               <NavLink
                 to="reviews"
                 className={({ isActive }) =>
                   clsx(
                     "px-5 py-3 transition-all cursor-pointer",
-                    isActive
-                      ? "font-bold underline underline-offset-8 text-black"
-                      : null
+                    isActive ? "bg-[#f3f3f3]" : null
                   )
                 }
               >
-                Reviews
+                My Account
               </NavLink>
               <NavLink
                 to="contact"
                 className={({ isActive }) =>
                   clsx(
                     "px-5 py-3 transition-all cursor-pointer",
-                    isActive
-                      ? "font-bold underline underline-offset-8 text-black"
-                      : null
+                    isActive ? "bg-[#f3f3f3]" : null
                   )
                 }
               >
-                Contact
+                Games
+              </NavLink>
+              <NavLink
+                to="contact"
+                className={({ isActive }) =>
+                  clsx(
+                    "px-5 py-3 transition-all cursor-pointer",
+                    isActive ? "bg-[#f3f3f3]" : null
+                  )
+                }
+              >
+                Login
               </NavLink>
             </div>
           </div>

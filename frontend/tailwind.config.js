@@ -7,13 +7,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         robotoFlex: ["Roboto Flex", "sans-serif"],
-      },
-      fontWeight: {
-        normal: 400,
-        medium: 500,
-        semibold: 600,
-        bold: 700,
-        extrabold: 800,
+        freeman: ["Freeman", "sans-serif"],
       },
       colors: {
         blackLight: "#000000DE",
@@ -22,6 +16,9 @@ export default {
         purple: "#8121a3",
         red: "#e62a21",
         yellow: "#ffda8d",
+      },
+      screens: {
+        xs: "430px",
       },
     },
   },

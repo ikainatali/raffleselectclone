@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
 
+:root {
+  background: linear-gradient(rgb(255, 255, 255), rgb(241, 247, 254));
+}
+
 /* NAVBAR */
 .animated-text {
   -webkit-text-fill-color: #ffffff00;
@@ -16,6 +20,7 @@
       #fed904,
       #00a2ff,
       #09f1b8);
+  background-clip: text;
   -webkit-background-clip: text;
   background-size: 300% 300%;
   font-size: 13px;

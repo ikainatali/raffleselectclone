@@ -134,7 +134,7 @@ const Navbar = () => {
           <div
             className={` ${
               menu ? "translate-x-0" : "-translate-x-full"
-            } xl:hidden flex justify-end absolute bg-black/50 left-0 top-0 overflow-x-hidden w-full h-screen transition-transform duration-300`}
+            } xl:hidden flex justify-end absolute bg-black/50 left-0 top-0 overflow-x-hidden w-full h-screen transition-transform duration-300 z-40`}
           >
             <div className="flex flex-col bg-white lg:w-2/5 md:w-3/6 w-2/4 font-poppins text-blackLight h-screen pt-4 pb-4 overflow-hidden">
               <div className="flex gap-2 items-center pb-3 px-2">

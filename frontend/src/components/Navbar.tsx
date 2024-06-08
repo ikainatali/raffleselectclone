@@ -26,8 +26,11 @@ const Navbar = () => {
       <div className="w-screen">
         <div className="sm:flex hidden justify-center bg-blackDark">
           <p className="text-[12px] text-white font-poppins py-1">
-            ✨Unlock the Excitement: Win Big with Our{" "}
-            <span className="animated-text">Raffles & Giveaways!!</span>
+            <span className="text-base">✨</span>
+            Unlock the Excitement: Win Big with Our{" "}
+            <span className="animated-text font-semibold">
+              Raffles & Giveaways!!
+            </span>
           </p>
         </div>
         <div className="w-screen flex flex-row justify-between items-center p-1 px-5 lg:px-10 xl:px-20 bg-white border-b-[1px] border-gray/40">
@@ -36,14 +39,14 @@ const Navbar = () => {
               <img src={logo} alt="Logo" className="w-44 -mt-1 pb-1" />
             </NavLink>
           </div>
-          <nav className="hidden xl:flex gap-5 p-1 text-gray text-sm font-poppins">
+          <nav className="hidden xl:flex gap-5 p-1 text-gray text-[13px] font-poppins">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 clsx(
                   "hover:text-black transition-all cursor-pointer",
                   isActive
-                    ? "font-semibold underline decoration-2 underline-offset-8 text-black"
+                    ? "text-[14px] font-semibold underline decoration-2 underline-offset-8 text-black"
                     : null
                 )
               }
@@ -56,7 +59,7 @@ const Navbar = () => {
                 clsx(
                   "hover:text-black transition-all cursor-pointer",
                   isActive
-                    ? "font-semibold underline decoration-2 underline-offset-8 text-black"
+                    ? "text-[14px] font-semibold underline decoration-2 underline-offset-8 text-black"
                     : null
                 )
               }
@@ -69,7 +72,7 @@ const Navbar = () => {
                 clsx(
                   "hover:text-black transition-all cursor-pointer",
                   isActive
-                    ? "font-semibold underline decoration-2 underline-offset-8 text-black"
+                    ? "text-[14px] font-semibold underline decoration-2 underline-offset-8 text-black"
                     : null
                 )
               }
@@ -82,12 +85,12 @@ const Navbar = () => {
                 clsx(
                   "hover:text-black transition-all cursor-pointer",
                   isActive
-                    ? "font-semibold underline decoration-2 underline-offset-8 text-black"
+                    ? "text-[14px] font-semibold underline decoration-2 underline-offset-8 text-black"
                     : null
                 )
               }
             >
-              My account
+              My Account
             </NavLink>
             <NavLink
               to="games"
@@ -95,7 +98,7 @@ const Navbar = () => {
                 clsx(
                   "hover:text-black transition-all cursor-pointer",
                   isActive
-                    ? "font-semibold underline decoration-2 underline-offset-8 text-black"
+                    ? "text-[14px] font-semibold underline decoration-2 underline-offset-8 text-black"
                     : null
                 )
               }

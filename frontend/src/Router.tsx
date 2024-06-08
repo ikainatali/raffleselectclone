@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Root from "./pages/Root";
 import Error from "./pages/Error";
 import CommonPageSection from "./components/CommonPageSection";
+import Shop from "./pages/Shop";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/myAccount",
         element: <CommonPageSection />,
+      },
+      {
+        path: "/shop",
+        element: <Shop />,
       },
     ],
   },

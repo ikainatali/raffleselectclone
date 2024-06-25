@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const Root = () => {
   return (
     <>
-      <body className="flex flex-col xl:h-screen h-full">
+      <div className="flex flex-col xl:h-screen h-full">
         <header>
           <Navbar />
         </header>
@@ -16,7 +16,7 @@ const Root = () => {
         <footer>
           <Footer />
         </footer>
-      </body>
+      </div>
     </>
   );
 };

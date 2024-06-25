@@ -20,7 +20,7 @@ const Home = () => {
           </p>
           <div className="pt-10 pb-2 grid xl:grid-cols-5 lg:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-4">
             {cardData.map((data, index) => (
-              <Link to="/">
+              <Link to="/" key={index}>
                 <Card
                   key={index}
                   icon={data.icon}

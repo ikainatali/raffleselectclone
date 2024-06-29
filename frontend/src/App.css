@@ -5,6 +5,9 @@
 
 :root {
   background: linear-gradient(rgb(255, 255, 255), rgb(241, 247, 254));
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: fit-content;
 }
 
 /* NAVBAR */
@@ -62,4 +65,8 @@
 .text-wide {
   transform: scaleY(0.6);
   transform-origin: 0 0;
+}
+
+tbody tr td:not(:first-child) {
+  text-align: center;
 }

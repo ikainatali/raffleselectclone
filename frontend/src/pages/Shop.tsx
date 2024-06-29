@@ -3,7 +3,14 @@ import { useState } from "react";
 import pricingPlanData from "../assets/data/pricingPlanData";
 import PricingPlan from "../components/shop/PricingPlan";
 
+import { useToggleStore } from "../store";
+import CardComparePlan from "../components/shop/CardComparePlan";
+
 const Shop = () => {
+  const isMonthly = useToggleStore((state) => state.isMonthly);
+
+  const firstToggle = useToggleStore((state) => state.firstToggle);
+
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = () => {
@@ -14,7 +21,7 @@ const Shop = () => {
     <>
       <Section>
         <div className="xl:w-[1240px] w-full mx-auto py-4 text-blackLight font-robotoFlex">
-          <div className="space-y-1">
+          <div className="space-y-1 pb-10">
             <h2 className="text-[1.7rem] font-bold text-center">
               🤑 Plans & Pricing
             </h2>
@@ -24,6 +31,7 @@ const Shop = () => {
             <div className="flex justify-center pt-2">
               <label className="relative inline-flex cursor-pointer items-center">
                 <input
+                  onClick={firstToggle}
                   onChange={handleCheckboxChange}
                   id="switch"
                   type="checkbox"
@@ -36,13 +44,25 @@ const Shop = () => {
           </div>
           {pricingPlanData.map((data, index) => (
             // console.log(data)
-            <div className="w-full flex gap-4" key={index}>
-              <PricingPlan card={data.card1} />
-              <PricingPlan card={data.card2} />
-              <PricingPlan card={data.card3} />
-              <PricingPlan card={data.card4} />
+            <div className="flex md:flex-row flex-col gap-4" key={index}>
+              <PricingPlan card={data.card1} isMonthly={isMonthly} />
+              <PricingPlan card={data.card2} isMonthly={isMonthly} />
+              <PricingPlan card={data.card3} isMonthly={isMonthly} />
+              <PricingPlan card={data.card4} isMonthly={isMonthly} />
             </div>
           ))}
+
+          <div className="py-6 text-blackLight font-robotoFlex">
+            <div className="space-y-1 pb-6">
+              <h2 className="text-[1.7rem] font-bold text-center">
+                💸 Compare our plans side by side
+              </h2>
+              <p className="text-[12px] text-center">
+                Effortlessly view plan options to make an informed decision
+              </p>
+            </div>
+            <CardComparePlan />
+          </div>
         </div>
       </Section>
     </>

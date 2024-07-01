@@ -5,9 +5,10 @@
 
 :root {
   background: linear-gradient(rgb(255, 255, 255), rgb(241, 247, 254));
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: fit-content;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  min-height: 100% !important;
+  /* overflow-x: hidden; */
 }
 
 /* NAVBAR */
@@ -69,4 +70,31 @@
 
 tbody tr td:not(:first-child) {
   text-align: center;
+}
+
+.round-flower,
+.round-text {
+  animation: rotateAndPause 12s linear infinite;
+}
+
+@keyframes rotateAndPause {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
 }

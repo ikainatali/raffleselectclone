@@ -23,7 +23,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="w-screen">
+      <div className="w-full">
         <div className="sm:flex hidden justify-center bg-blackDark">
           <p className="text-[12px] text-white font-poppins py-1">
             <span className="text-base">✨</span>
@@ -33,7 +33,7 @@ const Navbar = () => {
             </span>
           </p>
         </div>
-        <div className="w-screen flex flex-row justify-between items-center p-1 px-5 lg:px-10 xl:px-20 bg-white border-b-[1px] border-gray/40">
+        <div className="w-full flex flex-row justify-between items-center p-1 px-5 lg:px-10 xl:px-20 bg-white border-b-[1px] border-gray/40">
           <div>
             <NavLink to="/" className="cursor-pointer">
               <img src={logo} alt="Logo" className="w-44 -mt-1 pb-1" />

@@ -5,7 +5,7 @@ type SectionProps = PropsWithChildren;
 const Section = ({ children }: SectionProps) => {
   return (
     <>
-      <div className="w-screen p-5">{children}</div>
+      <div className="w-full p-5">{children}</div>
     </>
   );
 };

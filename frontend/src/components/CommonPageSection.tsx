@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const CommonPageSection = () => {
   return (
-    <div className="flex flex-col min-h-full items-center pt-16 font-poppins">
+    <div className="flex flex-col min-h-[80vh] items-center pt-16 font-poppins">
       <h1 className="text-2xl font-semibold">Create your first Giveaway</h1>
       <p className="text-sm">
         Create giveaways for Youtube, Facebook, Tiktok, Lists and more

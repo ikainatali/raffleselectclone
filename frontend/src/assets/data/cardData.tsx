@@ -16,6 +16,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const cardData = [
   {
+    link: "/instagram-giveaway",
     icon: <PiInstagramLogoLight size={40} />,
     iconHover: <FaInstagramSquare size={37} color="#C13584" />,
     title: "Instagram Giveaway",
@@ -24,6 +25,7 @@ const cardData = [
     bgStye: "h-full bg-gradient-to-r from-purple via-red to-yellow rounded-2xl",
   },
   {
+    link: "/facebook-giveaway",
     icon: <LiaFacebookSquare size={40} />,
     iconHover: <FaSquareFacebook size={36} color="#3A55A0" />,
     title: "Facebook Giveaway",
@@ -32,6 +34,7 @@ const cardData = [
     bgStye: "h-full bg-[#3A55A0] rounded-2xl",
   },
   {
+    link: "/youtube-giveaway",
     icon: <PiYoutubeLogoLight size={40} />,
     iconHover: <PiYoutubeLogoFill size={36} color="#F11204" />,
     title: "Youtube Giveaway",
@@ -40,6 +43,7 @@ const cardData = [
     bgStye: " h-full bg-[#F11204] rounded-2xl",
   },
   {
+    link: "/tiktok-giveaway",
     icon: <PiTiktokLogoLight size={40} />,
     iconHover: <IoLogoTiktok size={36} />,
     title: "Tiktok Giveaway",
@@ -48,6 +52,7 @@ const cardData = [
     bgStye: "h-full bg-[#5CECE7] rounded-2xl",
   },
   {
+    link: "/twitter-giveaway",
     icon: <FaXTwitter size={36} />,
     iconHover: <FaSquareXTwitter size={38} />,
     title: "Twitter Giveaway",

@@ -158,25 +158,11 @@ export const tr8 = [
       </div>
     ),
   },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
 ];
 
 export const tr9 = [
   {
     text: "Filter Entries By Hashtag",
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
   },
   {
     text: (
@@ -240,25 +226,11 @@ export const tr10 = [
       </div>
     ),
   },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
 ];
 
 export const tr11 = [
   {
     text: "Bonus Entries",
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
   },
   {
     text: (
@@ -322,25 +294,11 @@ export const tr12 = [
       </div>
     ),
   },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
 ];
 
 export const tr13 = [
   {
     text: "Branding",
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
   },
   {
     text: (
@@ -390,270 +348,6 @@ export const tr14 = [
       </div>
     ),
   },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-];
-export const rightColumn = [
-  {
-    text: "Instagram Giveaways",
-    comingSoon: true,
-  },
-  {
-    text: "Youtube Giveaways",
-    comingSoon: false,
-  },
-  {
-    text: "Tiktok Giveaways",
-    comingSoon: true,
-  },
-  {
-    text: "Twitter Giveaways",
-    comingSoon: false,
-  },
-  {
-    text: "Facebook Giveaways",
-    comingSoon: true,
-  },
-  {
-    text: "Winners",
-    comingSoon: false,
-  },
-  {
-    text: "Substitutes",
-    comingSoon: false,
-  },
-  {
-    text: "Exclude Duplicate Entries",
-    comingSoon: false,
-  },
-  {
-    text: "Filter Entries By Hashtag",
-    comingSoon: false,
-  },
-  {
-    text: "Multi-Network Giveaway",
-    comingSoon: false,
-  },
-];
-
-export const selectPro = [
-  {
-    text: "Bonus Entries",
-  },
-  {
-    text: "Block Accounts",
-  },
-];
-
-export const liveStreamerPro = [
-  {
-    text: "Branding",
-  },
-  {
-    text: "Countdown Clock",
-  },
-];
-
-export const free = [
-  {
-    text: "Up to 600 Comments",
-  },
-  {
-    text: "Up to 00 Comments",
-  },
-  {
-    text: "Up to 600 Comments",
-  },
-  {
-    text: "Up to 600 Comments",
-  },
-  {
-    text: "Up to 600 Comments",
-  },
-  {
-    text: "1-99",
-  },
-  {
-    text: "1-99",
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-];
-
-export const silver = [
-  {
-    text: "Up to 2,000 Comments",
-  },
-  {
-    text: "Up to 00 Comments",
-  },
-  {
-    text: "Up to 2,000 Comments",
-  },
-  {
-    text: "Up to 2,000 Comments",
-  },
-  {
-    text: "Up to 2,000 Comments",
-  },
-  {
-    text: "1-99",
-  },
-  {
-    text: "1-99",
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-];
-
-export const gold = [
-  {
-    text: "Up to 5,000 Comments",
-  },
-  {
-    text: "Up to 00 Comments",
-  },
-  {
-    text: "Up to 5,000 Comments",
-  },
-  {
-    text: "Up to 5,000 Comments",
-  },
-  {
-    text: "Up to 5,000 Comments",
-  },
-  {
-    text: "1-99",
-  },
-  {
-    text: "1-99",
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-];
-
-export const platinum = [
-  {
-    text: "Up to unlimited Comments",
-  },
-  {
-    text: "Up to 00 Comments",
-  },
-  {
-    text: "Up to unlimited Comments",
-  },
-  {
-    text: "Up to unlimited Comments",
-  },
-  {
-    text: "Up to unlimited Comments",
-  },
-  {
-    text: "1-99",
-  },
-  {
-    text: "1-99",
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-  {
-    text: (
-      <div className="text-[#F8573A] flex justify-center items-center">
-        <IoMdClose size={16} />
-      </div>
-    ),
-  },
-];
-
-export const proFeatures = [
   {
     text: (
       <div className="text-[#F8573A] flex justify-center items-center">

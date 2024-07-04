@@ -64,7 +64,7 @@ const TwitterGiveaway = () => {
                 TWITTER GIVEAWAY PICKER
               </h4>
               <HeadingWide
-                text1="YOUR COMMENT,"
+                text1="YOUR GIVEAWAY,"
                 text2="OUR PICK"
                 img3={
                   <span className="flex lg:mt-6 md:mt-4 mt-2">

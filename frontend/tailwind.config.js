@@ -18,7 +18,7 @@ export default {
         yellow: "#ffda8d",
       },
       screens: {
-        xs: "430px",
+        xs: "425px",
         xxs: "350px",
       },
     },

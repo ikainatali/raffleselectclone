@@ -14,8 +14,13 @@ import upgrade from "../assets/images/upgrade.png";
 import usaFlag from "../assets/images/usa-flag.jpg";
 
 const Navbar = () => {
+  const [isOpen, setOpen] = useState(false);
   const [menu, setMenu] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+  const handleDropDown = () => {
+    setOpen(!isOpen);
+  };
   const handleChange = () => {
     setMenu(!menu);
     setIsMenuOpen(!isMenuOpen);
@@ -92,7 +97,7 @@ const Navbar = () => {
             >
               My Account
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="games"
               className={({ isActive }) =>
                 clsx(
@@ -104,7 +109,41 @@ const Navbar = () => {
               }
             >
               Games
-            </NavLink>
+            </NavLink> */}
+            <div className="dropdown relative">
+              <button
+                className="text-black focus:ring-0 focus:outline-none font-medium rounded-lg text-sm text-center inline-flex items-center"
+                onClick={handleDropDown}
+              >
+                Games
+              </button>
+
+              <div
+                id="dropdown"
+                className={`absolute z-10 w-32 bg-white rounded-xl shadow-lg ${
+                  isOpen ? "block" : "hidden"
+                }`}
+              >
+                <ul className="z-10 bg-white">
+                  <li>
+                    <NavLink
+                      to="/games/flip-coin"
+                      className="block py-2 px-4 hover:bg-gray/5"
+                    >
+                      Flip a coin
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/games/roll-dice"
+                      className="block py-2 px-4 hover:bg-gray/5"
+                    >
+                      Roll Dice
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </nav>
           <div className="xl:flex hidden gap-5">
             <div className="flex gap-2 items-center">

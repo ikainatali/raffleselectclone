@@ -8,6 +8,8 @@ import InstagramGiveaway from "./components/home/instagramGiveaway/InstagramGive
 import YoutubeGiveaway from "./components/home/youtubeGiveaway/YoutubeGiveaway";
 import TiktokGiveaway from "./components/home/tiktokGiveway/TiktokGiveaway";
 import TwitterGiveaway from "./components/home/twitterGiveaway/TwitterGiveaway";
+import FlipCoin from "./components/games/FlipCoin";
+import RollDice from "./components/games/RollDice";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +54,14 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+      },
+      {
+        path: "/games/flip-coin",
+        element: <FlipCoin />,
+      },
+      {
+        path: "/games/roll-dice",
+        element: <RollDice />,
       },
     ],
   },

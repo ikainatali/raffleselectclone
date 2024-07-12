@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 type ButtonProps = {
+  link?: string;
   width?: number;
   padding?: number;
   paddingY?: number;
@@ -14,6 +15,7 @@ type ButtonProps = {
 };
 
 const Button = ({
+  link,
   width,
   padding,
   paddingY,
@@ -23,7 +25,7 @@ const Button = ({
   textSize,
 }: ButtonProps) => {
   return (
-    <Link to="/">
+    <Link to={link ? `${link}` : "/"}>
       <button
         className={clsx(
           "btn-transition btn-arrow flex justify-center items-center gap-2 rounded-full text-white font-poppins font-medium",

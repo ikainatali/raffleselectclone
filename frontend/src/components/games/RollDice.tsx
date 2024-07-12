@@ -1,5 +1,5 @@
 const RollDice = () => {
-  return <div>RollDice</div>;
+  return <div className="flex justify-center py-10">Coming Soon</div>;
 };
 
 export default RollDice;

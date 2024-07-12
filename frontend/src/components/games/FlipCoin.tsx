@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Section from "../Section";
 import clsx from "clsx";
 import Button from "../ui/Button";

@@ -1,10 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "react-icons": "^5.2.1",
-    "react-router-dom": "^6.23.1"
-=======
   "homepage": "https://ikainatali.github.io/raffleselectclone",
   "name": "frontend",
   "private": true,
@@ -43,6 +37,5 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
->>>>>>> 640d4d1 (update types)
   }
 }

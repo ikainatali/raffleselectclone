@@ -2,9 +2,9 @@ import { FaCheck } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 
 type CardProps = {
-  isIncluded: boolean;
-  text: string;
-  comingSoon: boolean;
+  isIncluded: boolean | any;
+  text: string | any;
+  comingSoon: boolean | any;
 };
 const CardPricingPlan = ({ isIncluded, text, comingSoon }: CardProps) => {
   return (

@@ -2,7 +2,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import CardPricingPlan from "./CardPricingPlan";
 
 type PricingPlanProps = {
-  card: object[];
+  card: object[] | any;
   isMonthly?: boolean;
 };
 
@@ -22,15 +22,13 @@ const PricingPlan = ({ card, isMonthly }: PricingPlanProps) => {
               Up to 00 Comments
             </p>
             <ul className="w-full space-y-3">
-              {card.map((data, index) => (
-                <div className="">
-                  <CardPricingPlan
-                    key={index}
-                    isIncluded={data.isIncluded}
-                    text={data.text}
-                    comingSoon={data.comingSoon}
-                  />
-                </div>
+              {card.map((data: any, index: number) => (
+                <CardPricingPlan
+                  key={index}
+                  isIncluded={data.isIncluded}
+                  text={data.text}
+                  comingSoon={data.comingSoon}
+                />
               ))}
             </ul>
             <div className="mx-auto pt-3 pb-2">

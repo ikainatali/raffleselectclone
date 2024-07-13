@@ -218,5 +218,4 @@ const pricingPlanData = [
     card4: cardList4,
   },
 ];
-
 export default pricingPlanData;
